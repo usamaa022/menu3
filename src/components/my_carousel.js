@@ -18,7 +18,7 @@ export function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[1100px] place-self-center"
+      className="w-[1150px] place-self-center"
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (

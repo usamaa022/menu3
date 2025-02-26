@@ -43,7 +43,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img src="/images/4.jpg" alt="Sample" className="h-full object-cover w-[450px] rounded-md" />
+          <img src="/images/4.jpg" alt="Sample" className="h-full object-cover w-[400px] rounded-md" />
         </motion.div>
 
         {/* Parallax Section 2 */}
