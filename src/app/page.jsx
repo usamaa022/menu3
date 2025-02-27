@@ -115,7 +115,6 @@ export default function Home() {
       </motion.div>
 
       {/* 🌟 Footer */}
-      <Footer />
     </div>
   );
 }
