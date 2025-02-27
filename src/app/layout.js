@@ -1,8 +1,9 @@
+import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "@/components/Navbar"; // Import your Navbar component
+import Navbar from "@/components/Navbar"; 
+import Footer from "@/components/Footer";
 
 import "./globals.css";
-import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,13 +23,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-      
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar />
+        
+        {/* Wrap children in Suspense */}
+        <Suspense fallback={<div>Loading...</div>}>
+          {children}
+        </Suspense>
+        
+        <Footer />
       </body>
     </html>
   );
