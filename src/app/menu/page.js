@@ -67,7 +67,7 @@ export default function Menu() {
     },
     {
       title: "Salads",
-      image: "food1.jpg", // Just the filename
+      image: "6.jpg", // Just the filename
       items: [
         "Caesar Salad - $5.99",
         "Greek Salad - $6.99",
@@ -76,7 +76,7 @@ export default function Menu() {
     },
     {
       title: "Salads",
-      image: "food1.jpg", // Just the filename
+      image: "7.jpg", // Just the filename
       items: [
         "Caesar Salad - $5.99",
         "Greek Salad - $6.99",
@@ -85,7 +85,7 @@ export default function Menu() {
     },
     {
       title: "Salads",
-      image: "food1.jpg", // Just the filename
+      image: "9.jpg", // Just the filename
       items: [
         "Caesar Salad - $5.99",
         "Greek Salad - $6.99",
