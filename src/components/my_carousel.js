@@ -18,22 +18,20 @@ export function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[1150px] place-self-center"
+      className="w-full max-w-5xl mx-auto"
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-0"> {/* Remove padding here */}
-              <Card className="border-0 shadow-none"> {/* Remove border and shadow */}
-                <CardContent className="h-[450] p-0"> {/* Remove padding here */}
-                  <img 
-                    src={`/images/${index + 1}.jpg`}
-                    alt={`Image ${index + 1}`}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </CardContent>
-              </Card>
-            </div>
+            <Card className="border-0 shadow-none">
+              <CardContent className="p-0">
+                <img 
+                  src={`/images/${index + 1}.jpg`}
+                  alt={`Image ${index + 1}`}
+                  className="w-full h-auto aspect-[16/9] object-cover rounded-lg"
+                />
+              </CardContent>
+            </Card>
           </CarouselItem>
         ))}
       </CarouselContent>
